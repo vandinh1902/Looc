@@ -1,0 +1,39 @@
+.middle {
+    height:350px;
+    background-color: #157eff;
+    &__content {
+        text-align: center;
+        padding: 50px 10px;
+        h1{
+            padding: 15px 0;
+            color: #fff;
+            font-size:16px;
+        }
+        p{
+            font-size:35px;
+            color: #fff;
+            @include responsive ("medium") {
+                font-size: 25px;
+            }
+            
+            
+        }
+        .btn-text {
+            padding: 50px 0;
+            .text-heading {
+                background-color: #157eff;
+                border: 1px solid #fff;
+                color: #fff;
+                border-radius: 25px;
+                padding: 10px 20px;
+                text-decoration: none;
+                align-items: center;
+                font-size: 13px;
+                i {
+                    margin-left: 50px;
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+}

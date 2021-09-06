@@ -1,0 +1,117 @@
+.intro{
+    background-color: #f4f5f8;
+    .container{
+        width: 1250px;
+        margin: auto;
+        padding: 50px 10px;
+        @include responsive ("medium") {
+            width: 100%;
+        }
+    }
+    &__heading{
+        text-align: center;
+        h1{
+            padding-bottom: 20px;
+            font-size: 35px;
+            @include responsive ("medium") {
+                font-size: 30px;
+            }
+        }
+        p{
+            list-style: 25px;
+            font-size:14px;
+        }
+
+    }
+    &__list{
+        display:grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        justify-content:center;
+        align-items: center;
+        padding: 50px 0;
+        @include responsive ("medium") {
+           display: block;
+           text-align: center;
+        }
+    }
+    
+    &__item{
+        padding-bottom: 20px;
+        
+    }
+    &__item.item1{
+        grid-column: 1 / span 3;
+        grid-row: 1 / span 1;
+    }
+    &__item.item3{
+        grid-column: 1 / span 3;
+        grid-row: 2 / span 1;
+        
+    }
+    &__item.item5{
+        grid-column: 1 / span 3;
+        grid-row: 3 / span 1;
+        
+    }
+    &__item.item2{
+        grid-column: 3 / span 3;
+        grid-row: 1 / span 1;
+        text-align:right;
+        @include responsive ("medium") {
+            text-align:center;
+        }
+    }
+    &__item.item4{
+        grid-column: 3 / span 3;
+        grid-row: 2/ span 1;
+        text-align:right;
+        @include responsive ("medium") {
+            text-align:center;
+        }
+        
+    }
+    &__item.item6{
+        grid-column: 3 / span 3;
+        grid-row: 3 / span 1;
+        text-align:right;
+        @include responsive ("medium") {
+            text-align:center;
+        }
+    }
+    &__item.item7{
+        grid-column: 2 / span 3;
+        grid-row: 1 / span 3;
+        
+        img{
+            width: 450px;
+            @include responsive ("medium") {
+                width: 100%;
+            }
+            
+        }
+        
+    }
+    .btn-text{
+        text-align: center;
+        margin-bottom: 4rem;
+        @include responsive ("medium") {
+            margin-bottom: 2rem;
+        }
+        .text-heading{
+            background-color: #000;
+            color: #fff;
+            border-radius: 25px;
+            padding: 10px 20px;
+            text-decoration: none;
+            align-items: center;
+            font-size: 12px;
+            i{
+               margin-left: 30px;
+               font-size: 10px;
+
+            }
+        }
+
+    }
+}

@@ -1,0 +1,105 @@
+.contract {    
+    
+    &__quick{
+        background-color: #f4f5f8;
+    }
+    &__quick-content {  
+        display: flex;
+        width: 1250px;
+        margin: auto;
+        align-items: center;
+        justify-content: space-between;
+        padding: 50px 0;
+        @include responsive("medium") {
+            display: block;
+            width: auto;
+        }
+        .heading-left {
+            width: 225px;
+            @include responsive("medium") {
+                padding: 0 10px;
+                margin-bottom: 20px;
+                width: auto;
+            }
+            h1 {
+                font-size: 40px;
+            }
+        }
+        .heading-right {
+            p{
+                font-size: 16px;
+                @include responsive("medium") {
+                    font-size: 13px;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                }
+            }
+
+            
+        }
+        .item4 {
+            padding-top: 20px;
+        }
+    }
+    &__heading {
+        text-align: center;
+        margin-bottom: 60px;
+        @include responsive ("medium") {
+            padding: 0 10px;
+        }
+        h1 {
+            margin-top: 120px;
+            margin-bottom: 40px;
+            line-height: 30px;
+            font-size: 40px;
+            @include responsive ("medium") {
+                font-size: 30px;
+            }
+        }
+        p {
+            line-height: 25px;
+            font-size: 16px;
+            @include responsive ("medium") {
+                font-size: 13px;
+            }
+        }
+    }
+    &__list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 1250px;
+        margin: auto;
+        @include responsive ("medium") {
+            width: auto;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            margin-bottom: 50px;
+            
+            
+        }
+    }
+    &__item {
+        width: 25%;
+        text-align: center;
+        @include responsive ("medium") {
+            width: 100%;
+        }
+        img {
+            padding: 20px 0;
+        }
+        .item__heading {
+            h3 {
+                padding: 10px 0;
+            }
+            p {
+                line-height: 25px;
+                font-size: 16px;
+                @include responsive ("medium") {
+                    font-size:13px;
+                }
+            }
+        }
+    }
+}

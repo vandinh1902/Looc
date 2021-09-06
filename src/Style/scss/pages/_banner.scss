@@ -1,0 +1,65 @@
+.banner {
+    position: relative;
+    &__image {
+        width: 100%;
+        object-fit: cover;
+        @include responsive ("medium") {
+            height:500px;
+        }
+    }
+    &__content {
+        padding: 0 10px;
+        position: absolute;
+        left: 320px;
+        top: 80px;
+        align-items: center;
+        justify-content: center;
+        @include responsive ("medium") {
+            left: 0;
+            top : 0;
+        }
+        h1 {
+            
+            color: #fff;
+            font-size: 45px;
+            margin: 50px 0;
+            @include responsive ("medium") {
+                font-size: 35px;
+            }
+        }
+        .text1 {
+            margin-bottom: 50px;
+        }
+        .text-item {
+            color: #fff;
+            font-size: 16px;
+        }
+        .btn-banner {
+            margin-top: 100px;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            .text {
+                text-decoration: none;
+                font-size: 16px;
+                margin: 10px;
+                color: #fff;
+            }
+            span {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #fff;
+                margin-left: 10px;
+                width: 35px;
+                height: 35px;
+                border-radius: 100%;
+
+                i {
+                    font-size: 13px;
+                    color: #157eff;
+                }
+            }
+        }
+    }
+}

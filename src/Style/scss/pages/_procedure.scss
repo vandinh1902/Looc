@@ -1,0 +1,52 @@
+.procedure {
+    background-color: #e9e9e9;
+    .container {
+        padding: 50px 10px;
+    }
+    &__content {
+        text-align: center;
+        h3 {
+            padding: 20px 0;
+        }
+    }
+    &__carousel {
+        padding-top: 20px;
+    }
+    &__img {
+        img {
+            @include responsive("medium") {
+                width: 100%;
+                height: 100%;
+            }
+            width: 600px;
+            height: 400px;
+        }
+    }
+    .slick-next {
+        right: 625px;
+        background: #e9e9e9 !important;
+        display: none !important;
+    }
+    .slick-prev {
+        left: 625px;
+        display: none !important;
+    }
+
+    .btn-text {
+        padding: 50px 0;
+        .text-heading {
+            background-color: #157eff;
+
+            color: #fff;
+            border-radius: 25px;
+            padding: 10px 20px;
+            text-decoration: none;
+            align-items: center;
+            font-size: 10px;
+            i {
+                margin-left: 20px;
+                font-size: 10px;
+            }
+        }
+    }
+}

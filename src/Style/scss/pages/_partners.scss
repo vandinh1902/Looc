@@ -1,0 +1,26 @@
+.partners{
+    @include responsive ("medium") {
+        display: none;
+    }
+    .container{
+        padding: 50px 10px;
+    }
+    &__content{
+        text-align: center;
+        h1{
+            padding: 10px 0;
+        }
+        p{
+            padding: 10px 0;
+            line-height: 25px;
+        }
+    }
+    &__logo{
+        width: 1150px;
+        margin: auto;
+        padding: 20px 0;
+    }
+    .slick-active button:before{
+        color: #157eff !important;
+    }
+}
