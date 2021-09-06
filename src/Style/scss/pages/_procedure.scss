@@ -31,7 +31,9 @@
         left: 625px;
         display: none !important;
     }
-
+    .slick-active button:before{
+        color: #157eff !important;
+    }
     .btn-text {
         padding: 50px 0;
         .text-heading {
