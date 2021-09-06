@@ -1,4 +1,5 @@
 import React from "react";
+import Burger from "./burger";
 
 export default function Header() {
   return (
@@ -11,19 +12,19 @@ export default function Header() {
           <div className="header__nav">
             <ul className="nav__bar">
               <li className="nav__item active">
-                <a href="">고객센터</a>
+                <a href="">서비스 소개</a>
               </li>
               <li className="nav__item">
-                <a href="">고객센터</a>
+                <a href="">법적효력·보안</a>
               </li >
               <li className="nav__item">
-                <a href="">고객센터</a>
+                <a href="">활용 분야</a>
               </li>
               <li className="nav__item">
-                <a href="">고객센터</a>
+                <a href="">이용 혜택</a>
               </li>
               <li className="nav__item">
-                <a href="">고객센터</a>
+                <a href="">요금 안내</a>
               </li>
               <li className="nav__item">
                 <a href="">고객센터</a>
@@ -36,9 +37,12 @@ export default function Header() {
                 <a href="">로그인</a>
               </li>
               <li>
-                <a href="">로그인</a>
+                <a href="">회원가입</a>
               </li>
             </ul>
+          </div>
+          <div className="header__buger">
+            <Burger/>
           </div>
         </div>
       </div>
